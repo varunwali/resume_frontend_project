@@ -30,7 +30,7 @@ const Signup = () => {
           headers: {
             "Content-Type": "application/json",
             "Access-Control-Allow-Origin":
-              "https://resume-frontend-project.vercel.app",
+              "https://resume-frontend-project.onrender.com",
           },
         }
       );
