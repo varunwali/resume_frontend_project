@@ -19,7 +19,7 @@ function Header() {
         {
           headers: {
             "Access-Control-Allow-Origin":
-              "https://resume-frontend-project.onrender.com",
+              "https://resume-frontend-project.vercel.app",
           },
         }
       );
