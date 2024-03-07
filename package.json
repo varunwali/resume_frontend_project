@@ -1,8 +1,8 @@
 {
   "name": "resume_builder",
   "version": "0.1.0",
-  "proxy": "https://rich-ruby-hippopotamus-ring.cyclic.app/",
-  "homepage": "https://resume-builder-frontend-amber.vercel.app/",
+  "proxy": "https://rich-ruby-hippopotamus-ring.cyclic.app",
+  "homepage": "https://resume-frontend-project.onrender.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
