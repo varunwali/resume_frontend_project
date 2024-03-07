@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 44px 44px;
+  align-items: center;
+}
+
+.container h3 {
+  background-clip: text;
+  background-image: linear-gradient(to right, #6c63ff, #5d52ff);
+  color: transparent;
+}
+
+.container .imageContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.link {
+  display: block;
+  border-radius: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #6c63ff;
+  text-decoration: none;
+  width: 214px;
+  height: 44px;
+  padding: 12px 4px;
+  margin-left: 16px;
+  margin-top: 160px;
+  transition-duration: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  background-color: #5d52ff;
+}
+
+.imageContainer img {
+  width: 400px;
+  height: 400px;
+  border: 1.4px solid #000;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 280px) and (max-width: 480px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .container h3 {
+    font-size: 2rem;
+  }
+
+  .link {
+    margin-top: 20px;
+    width: 190px;
+  }
+
+  .imageContainer {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .imageContainer img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .container {
+    margin: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container h3 {
+    font-size: 2.2rem;
+  }
+
+  .link {
+    margin-top: 10px;
+    width: 200px;
+  }
+
+  .imageContainer {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .imageContainer img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    margin: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container h3 {
+    font-size: 2.4rem;
+  }
+
+  .link {
+    margin-top: 1rem;
+    width: 210px;
+  }
+
+  .imageContainer {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.2rem;
+    flex-direction: row;
+  }
+
+  .imageContainer img {
+    width: 480px;
+    height: 480px;
+  }
+}

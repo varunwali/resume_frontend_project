@@ -1,0 +1,93 @@
+.container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 0;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 2.1rem;
+  letter-spacing: 0.2rem;
+}
+
+.toolbar {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.colors {
+  display: flex;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.colors .color {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: #6c63ff;
+}
+.colors .active {
+  border: 2px solid #000; /*sets the background of selected color*/
+}
+
+.toolbar button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #6c63ff;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toolbar button svg {
+  height: 20px;
+  width: 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 280px) and (max-width: 480px) {
+  .container {
+    padding: 25px;
+  }
+  .toolbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .toolbar button {
+    margin-left: 28px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    padding: 30px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 35px;
+  }
+}
