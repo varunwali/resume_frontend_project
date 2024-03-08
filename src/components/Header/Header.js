@@ -17,20 +17,17 @@ function Header() {
       const response = await axios.get(
         "https://rich-ruby-hippopotamus-ring.cyclic.app/api/v1/user/logout",
         {
-          headers: {
-            "Access-Control-Allow-Origin":
-              "https://resume-frontend-project-1.onrender.com",
-          },
+          withCredentials: true,
           mode: "cors",
-          credentials: "include",
+          credentials: "include", //like token,cookies etc
         }
       );
       toast.success(response.data.message); //its is used to provied notifications
-      setIsAuthorized(true);
+      setIsAuthorized(false);
       navigateTo("/login");
     } catch (error) {
       toast.error(error.response.data.message);
-      setIsAuthorized(false);
+      setIsAuthorized(true);
     }
   };
 
