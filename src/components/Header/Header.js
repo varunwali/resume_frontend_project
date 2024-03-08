@@ -26,11 +26,11 @@ function Header() {
         }
       );
       toast.success(response.data.message); //its is used to provied notifications
-      setIsAuthorized(false);
+      setIsAuthorized(true);
       navigateTo("/login");
     } catch (error) {
       toast.error(error.response.data.message);
-      setIsAuthorized(true);
+      setIsAuthorized(false);
     }
   };
 
