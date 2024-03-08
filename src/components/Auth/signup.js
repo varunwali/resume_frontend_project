@@ -32,6 +32,8 @@ const Signup = () => {
             "Access-Control-Allow-Origin":
               "https://resume-frontend-project-1.onrender.com",
           },
+          mode: "cors",
+          credentials: "include",
         }
       );
       toast.success(data.message);

@@ -21,6 +21,8 @@ function Header() {
             "Access-Control-Allow-Origin":
               "https://resume-frontend-project-1.onrender.com",
           },
+          mode: "cors",
+          credentials: "include",
         }
       );
       toast.success(response.data.message); //its is used to provied notifications
