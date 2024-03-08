@@ -19,6 +19,10 @@ const App = () => {
         const response = await axios.get(
           "https://rich-ruby-hippopotamus-ring.cyclic.app/api/v1/user/getuser",
           {
+            headers: {
+              "Access-Control-Allow-Origin":
+                "https://resume-frontend-project-1.onrender.com",
+            },
             withCredentials: true,
             mode: "cors",
             credentials: "include",
