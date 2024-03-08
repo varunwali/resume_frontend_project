@@ -8,6 +8,7 @@ import Signup from "./components/Auth/signup";
 import Template from "./components/Template/Template";
 import NotFound from "./components/NotFound/NotFound";
 import { Context } from "./index";
+import axios from "axios";
 
 const App = () => {
   const { isAuthorized, setIsAuthorized, setUser } = useContext(Context);
