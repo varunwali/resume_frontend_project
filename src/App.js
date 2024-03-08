@@ -7,7 +7,7 @@ import Login from "./components/Auth/login";
 import Signup from "./components/Auth/signup";
 import Template from "./components/Template/Template";
 import NotFound from "./components/NotFound/NotFound";
-import { Context } from "../../index";
+import { Context } from "./index";
 
 const App = () => {
   const { isAuthorized, setIsAuthorized, setUser } = useContext(Context);
