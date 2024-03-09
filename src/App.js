@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect, useContext } from "react";
+import { Context } from "./index";
+import axios from "axios";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import Header from "./components/Header/Header";
@@ -9,6 +11,26 @@ import Template from "./components/Template/Template";
 import NotFound from "./components/NotFound/NotFound";
 
 const App = () => {
+  const { isAuthorized, setIsAuthorized, setUser } = useContext(Context);
+  //fetching the user
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const response = await axios.get(
+          "https://rich-ruby-hippopotamus-ring.cyclic.app/api/v1/user/getuser",
+          {
+            withCredentials: true,
+          }
+        );
+        setUser(response.data.user);
+        setIsAuthorized(true);
+      } catch (error) {
+        setIsAuthorized(false);
+      }
+    };
+    fetchUser(); //calling the fetchUSer function in useeffect hook
+  }, [isAuthorized]);
+
   return (
     <>
       <BrowserRouter>
