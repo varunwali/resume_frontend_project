@@ -20,6 +20,8 @@ const App = () => {
           "https://rich-ruby-hippopotamus-ring.cyclic.app/api/v1/user/getuser",
           {
             withCredentials: true,
+            mode: "cors",
+            credentials: "include",
           }
         );
         setUser(response.data.user);
