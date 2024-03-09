@@ -138,8 +138,17 @@ p {
   height: 500px;
 }
 
+.loadring {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+}
+
 /* Media Queries for Responsive Design */
-@media (max-width: 480px) {
+@media (min-width: 280px) and (max-width: 480px) {
   .authPage {
     min-width: auto;
     max-width: auto;
@@ -149,10 +158,26 @@ p {
   .authPage .container {
     padding: 20px;
   }
+  .authPage .container form .inputTag div svg {
+    width: 10%;
+    font-size: 1.5rem;
+    background: #6c63ff;
+    height: 100%;
+    padding: 8px;
+    color: #fff;
+  }
 
   .authPage .banner img {
     max-width: 100%;
     height: auto;
+  }
+  .loadring {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px; /* Adjust width as needed */
+    height: 120px; /* Adjust height as needed */
   }
 }
 
@@ -166,6 +191,15 @@ p {
   .authPage .banner img {
     max-width: 100%;
     height: auto;
+  }
+
+  .authPage .container form .inputTag div svg {
+    width: 10%;
+    font-size: 1.5rem;
+    background: #6c63ff;
+    height: 100%;
+    padding: 8px;
+    color: #fff;
   }
 
   .authPage .container {
@@ -221,16 +255,6 @@ p {
   .authPage .container form button {
     font-size: 1.6rem;
   }
-}
-
-.loadring {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 400px;
-  margin-top: 100px;
-  width: 400px;
-  height: 400px;
 }
 
 @media (min-width: 1400px) {

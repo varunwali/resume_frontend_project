@@ -122,6 +122,9 @@
     max-width: 300px;
   }
 
+  .navheading {
+    font-size: 2rem;
+  }
   .link {
     margin: 10px auto 0;
   }
@@ -140,6 +143,9 @@
     font-size: 2.7rem;
     line-height: 3.7rem;
     max-width: 350px;
+  }
+  .navheading {
+    font-size: 2rem;
   }
 
   .right img {

@@ -40,7 +40,7 @@ function Header() {
       <div className={styles.navcontainer}>
         <nav className={styles.navbar}>
           <div className={styles.logo}>
-            <h3>Resume Builder</h3>
+            <h3 className={styles.navheading}>Resume Builder</h3>
           </div>
           <div className={styles.navmenu}>
             <GiHamburgerMenu className={styles.icon} onClick={handleisOpen} />
