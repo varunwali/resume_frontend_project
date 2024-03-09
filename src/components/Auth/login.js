@@ -20,7 +20,7 @@ const Login = () => {
     try {
       setIsLoading(true);
       const { data } = await axios.post(
-        "https://rich-ruby-hippopotamus-ring.cyclic.app/api/v1/user/login",
+        "https://resume-builder-backend-ce97.onrender.com/api/v1/user/login",
         { email, password },
         {
           headers: {

@@ -15,7 +15,7 @@ function Header() {
   const handleLogout = async () => {
     try {
       const response = await axios.get(
-        "https://rich-ruby-hippopotamus-ring.cyclic.app/api/v1/user/logout",
+        "https://resume-builder-backend-ce97.onrender.com/api/v1/user/logout",
         {
           withCredentials: true,
           mode: "cors",
