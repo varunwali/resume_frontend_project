@@ -141,7 +141,7 @@
   .header {
     overflow-x: scroll;
     flex-direction: row;
-    flex-wrap: wrap; /* Add horizontal scrolling */
+    flex-wrap: wrap;
   }
   .detail .row {
     flex-direction: column;
@@ -156,16 +156,12 @@
   }
   .header {
     overflow-x: scroll;
-    overflow-y: hidden; /* Prevent vertical scrolling */
-    white-space: nowrap;
-    display: flex; /* Ensure proper layout */
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  .header::-webkit-scrollbar {
-    height: 7px;
-  }
-  .header::-webkit-scrollbar-thumb {
-    border-radius: 20px;
-    background-color: #c7c7c7;
+  .detail .row {
+    flex-direction: column;
+    gap: 20px;
   }
 }
 
@@ -176,15 +172,8 @@
   }
   .header {
     overflow-x: scroll;
-    overflow-y: hidden; /* Prevent vertical scrolling */
+    overflow-y: hidden;
     white-space: nowrap;
-    display: flex; /* Ensure proper layout */
-  }
-  .header::-webkit-scrollbar {
-    height: 7px;
-  }
-  .header::-webkit-scrollbar-thumb {
-    border-radius: 20px;
-    background-color: #c7c7c7;
+    display: flex;
   }
 }

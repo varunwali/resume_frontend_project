@@ -153,6 +153,7 @@ p {
     min-width: auto;
     max-width: auto;
     flex-direction: column;
+    padding: 10px;
   }
 
   .authPage .container {
@@ -186,6 +187,7 @@ p {
     min-width: auto;
     max-width: auto;
     flex-direction: column;
+    padding: 100px;
   }
 
   .authPage .banner img {
@@ -194,7 +196,7 @@ p {
   }
 
   .authPage .container form .inputTag div svg {
-    width: 10%;
+    width: 7%;
     font-size: 1.5rem;
     background: #6c63ff;
     height: 100%;
@@ -218,6 +220,7 @@ p {
     min-width: auto;
     max-width: auto;
     flex-direction: column;
+    padding: 100px;
   }
 
   .authPage .banner img {
@@ -233,6 +236,14 @@ p {
   .authPage .container form button {
     font-size: 1.4rem;
   }
+  .authPage .container form .inputTag div svg {
+    width: 6%;
+    font-size: 1.7rem;
+    background: #6c63ff;
+    height: 100%;
+    padding: 8px;
+    color: #fff;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
@@ -240,6 +251,7 @@ p {
     min-width: auto;
     max-width: auto;
     flex-direction: column;
+    padding: 100px;
   }
 
   .authPage .banner img {
@@ -255,11 +267,23 @@ p {
   .authPage .container form button {
     font-size: 1.6rem;
   }
+  .authPage .container form .inputTag div svg {
+    width: 4%;
+    font-size: 1.5rem;
+    background: #6c63ff;
+    height: 100%;
+    padding: 8px;
+    color: #fff;
+  }
 }
 
 @media (min-width: 1400px) {
   .authPage {
     min-width: 100vw;
     min-height: 100vh;
+  }
+
+  .authPage .banner img {
+    width: 900px;
   }
 }

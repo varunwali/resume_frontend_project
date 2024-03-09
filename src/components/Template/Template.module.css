@@ -76,8 +76,6 @@
   .container {
     margin: 40px;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 
   .container h3 {
@@ -108,8 +106,6 @@
   .container {
     margin: 40px;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
   }
   .container h3 {
     font-size: 2.4rem;
@@ -133,5 +129,11 @@
   .imageContainer img {
     width: 480px;
     height: 480px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .container {
+    gap: 20px;
   }
 }
