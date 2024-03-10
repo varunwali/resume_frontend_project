@@ -122,6 +122,10 @@
     max-width: 300px;
   }
 
+  .navheading {
+    font-size: 1.6rem;
+  }
+
   .link {
     margin: 10px auto 0;
   }
